@@ -1,0 +1,17 @@
+<div class="wrapper">
+
+  <!--Render horizontal navigation bar-->
+  <navigation-bar [profile]="profile"></navigation-bar>
+
+  <!-- Left side column. contains the logo and sidebar -->
+  <side-bar></side-bar>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <router-outlet></router-outlet>
+  </div>
+  <block-ui-dynamic [visible]='visibleOnFullPage'>
+    {{message}}
+    <fa-icon [icon]="['fas', 'sync']" [spin]="true"></fa-icon>
+  </block-ui-dynamic>
+</div>
