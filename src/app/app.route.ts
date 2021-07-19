@@ -33,7 +33,7 @@ export const routes: Routes = [
     AppComponent
   ],
   imports: [
-    RouterModule.forRoot(routes, {enableTracing: false})
+    RouterModule.forRoot(routes, { enableTracing: false, relativeLinkResolution: 'legacy' })
   ],
   exports:[
     RouterModule
