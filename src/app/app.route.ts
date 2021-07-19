@@ -16,11 +16,11 @@ export const routes: Routes = [
       },
       {
         path: 'dashboard',
-        loadChildren: 'modules/dashboard/dashboard.module#DashboardModule',
+        loadChildren: () => import('modules/dashboard/dashboard.module').then(m => m.DashboardModule),
       },
       {
         path: 'login',
-        loadChildren: 'modules/account/account.module#AccountModule'
+        loadChildren: () => import('modules/account/account.module').then(m => m.AccountModule)
       }
     ]
   }
