@@ -1,6 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-import { AngularBlockUiDynamicModule } from "angular-block-ui-dynamic";
+ng update @angular/core@12 @angular/cli@12import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { AppRouteModule } from './app.route';
 
@@ -10,7 +9,6 @@ import { AppRouteModule } from './app.route';
   ],
   imports: [
     BrowserModule,
-    AngularBlockUiDynamicModule,
     AppRouteModule
   ],
   providers: [],
